@@ -1,0 +1,12 @@
+[
+  {
+    "directory": "/home/maks/Project/NetWork/source/build",
+    "command": "c++  -Idemo@exe -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -MD -MQ 'demo@exe/main.cpp.o' -MF 'demo@exe/main.cpp.o.d' -o 'demo@exe/main.cpp.o' -c ../main.cpp",
+    "file": "../main.cpp"
+  },
+  {
+    "directory": "/home/maks/Project/NetWork/source/build",
+    "command": "c++  -Idemo@exe -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -O0 -g -MD -MQ 'demo@exe/Wrapper.cpp.o' -MF 'demo@exe/Wrapper.cpp.o.d' -o 'demo@exe/Wrapper.cpp.o' -c ../Wrapper.cpp",
+    "file": "../Wrapper.cpp"
+  }
+]
