@@ -1,5 +1,8 @@
-#include "../headers/Wrapper.hpp"
+#include "Wrapper.hpp"
 
+namespace wrapper
+{
+    
 
 time_t Wrapper::time(std::time_t* tloc) const noexcept
 {
@@ -61,7 +64,4 @@ void Wrapper::sleep(uint32_t time) const noexcept
     std::this_thread::sleep_for(std::chrono::milliseconds(time));
 }
 
-int testPrint()
-{
-    return 5;
 }
