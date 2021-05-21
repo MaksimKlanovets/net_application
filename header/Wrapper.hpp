@@ -1,5 +1,7 @@
-#include "../api/IWrapper.hpp"
+#include "IWrapper.hpp"
 
+namespace wrapper
+{
 class Wrapper final : public IWrapper
 {
 public:
@@ -27,3 +29,4 @@ public:
 
     void sleep(uint32_t time) const noexcept override;
 };
+}

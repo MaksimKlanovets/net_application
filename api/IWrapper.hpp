@@ -11,7 +11,8 @@
 #include <sys/wait.h>
 #include <thread>
 #include <unistd.h>
-
+namespace wrapper
+{
 
 class IWrapper
 {
@@ -42,3 +43,5 @@ public:
 
     virtual void sleep(uint32_t time) const noexcept = 0;
 };
+
+}

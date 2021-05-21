@@ -1,4 +1,24 @@
-project('tutorial', 'cpp')
+inc =  include_directories('../api', '../header')
 
+src = [
+    'Wrapper.cpp'
+]
 
-executable('demo', 'main.cpp','Wrapper.cpp')
+src_with_path = []
+
+foreach i: src
+src_with_path += './' +i
+endforeach
+
+wrapper_sl = static_library(
+    'wrapper',
+    sources : [src_with_path],
+    include_directories: [
+        inc
+    ]
+)
+
+wrapper_dep = declare_dependency(
+    link_with : wrapper_sl,
+    include_directories : inc
+)
